@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>표를 만드는 태그</title>
+    <style>
+      table {
+        width: 100%;
+        height: 30px;
+      }
+      table,
+      td,
+      th {
+        border: 1px solid black;
+        border-collapse: collapse;
+        height: 15px;
+      }
+      th {
+        background-color: beige;
+      }
+      td {
+        height: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>테이블 태그</h1>
+    <!-- table>tr>th*3 -->
+    <!-- table>caption+tr>th*3^tr>th*3^tr>th*3 -->
+    <table>
+      <!-- 표의 제목을 만드는 태그 -->
+      <caption>표의 제목</caption>
+      <!-- 테이블의 행을 만드는 태그 -->
+      <tr>
+        <!-- table header -->
+        <th>컬럼 1</th>
+        <th>컬럼 2</th>
+        <th>컬럼 3</th>
+      </tr>
+      <tr>
+        <!-- table data -->
+        <td>표의 셀 4</td>
+        <td>표의 셀 5</td>
+        <td>표의 셀 6</td>
+      </tr>
+      <tr>
+        <td>표의 셀 7</td>
+        <td>표의 셀 8</td>
+        <td>표의 셀 9</td>
+      </tr>
+    </table>
+    <p>table>caption+tr>th*4^tr>th*4^tr>th*4</p>
+    <table>
+      <caption>전화번호부</caption>
+      <tr>
+        <th colspan="2">이름</th>
+        <th>나이</th>
+        <th>전화번호</th>
+      </tr>
+      <tr>
+        <td rowspan="2">홍</td>
+        <td rowspan="2">길동</td>
+        <td rowspan="2">30</td>
+        <td>010-1111-1111</td>
+      </tr>
+      <tr>
+        <td>010-2222-2222</td>
+      </tr>
+    </table>
+    <a href="../main/home.html">홈으로</a>
+  </body>
+</html>

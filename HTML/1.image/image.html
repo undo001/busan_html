@@ -3,7 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>이미지</title>
   </head>
-  <body></body>
+  <body>
+    <h1>Image</h1>
+    <a href="../0.route/route.html">루트</a>
+    <br />
+    <!-- 이미지 태그
+      <img src="이미지URL", alt="대체텍스트" />
+      -->
+    <!-- 현재 폴더에 있는 리소스를 참조 -->
+    <img src="./images/aaa.png" alt="짱구1" />
+    <img src="./images/bbb.png" alt="짱구2" />
+    <!-- 상위 폴더의 하위 폴더에 있는 리소스를 참조 -->
+    <img src="../0.route/sub/lion.jfif" alt="라이언" />
+
+    <figure>
+      <img src="./images/ccc.jfif" alt="철수" />
+      <figcaption>철수</figcaption>
+    </figure>
+
+    <img
+      src="https://search.pstatic.net/common/?src=http%3A%2F%2Fpost.phinf.naver.net%2FMjAyMDEwMTRfNTEg%2FMDAxNjAyNjY3Mzk1NTM5.Ce_CH6KYKB6xK3xHp7LczLG7lIXjWizHEECysLy51Hsg.EmQHsj6U56aCfDeIjGk8tRF1xMZBVvRGrdldcjyoDR0g.JPEG%2FIJo-jM1wvVFe82ozIOqPei0un3tk.jpg&type=a340"
+      alt="울어요" />
+    <br />
+
+    <!-- <ifram>: 외부의 HTML 문서 및 컨텐츠를 가져올 때 사용하는 태그 -->
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/MstJy8JvPh4?si=zxnQ1Fv_6WQbvwtb"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen></iframe>
+    <br />
+    <iframe width="560" height="315" src="../main/home.html"></iframe>
+    <a href="../main/home.html">홈으로</a>
+  </body>
 </html>
