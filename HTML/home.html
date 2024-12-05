@@ -1,7 +1,7 @@
 <!doctype html>
 <!-- ctrl + / -->
 <!-- HTML 주석 -->
-
+<!-- prettier-ignore -->
 <!-- HTML 문서의 시작을 알리는 부분 -->
 <html lang="ko">
   <!-- 브라우저에 HTML문서에 대한 정보를 주는 태그 -->
@@ -27,10 +27,24 @@
 
     <hr />
     <!-- 링크 테그 -->
-    <a href="https://www.naver.com" target="self">네이버</a>
-
-    <!-- Directory 경로
-      HTML 파일에서 경론느 파일 시스템 내의 위치를 지정
+    <a href="https://www.naver.com" target="self">
+      네이버
+      <!-- 네이버 -->
+    </a>
+    <!--
+        web 경로
+        protocol host             port    path    queryString
+        https://  www.domain.com   :8888   /login  ?key=value
+      
+        -url
+          origin: protocol + host + port
+            protocol: http, https
+            host: 사이트 도메인(IP주소를 보기쉽게 도메인 이름으로 변경)
+            port: 포트 번호
+            path: 서버측의 사이트 내부 경로
+            query string : 요청의 key와 value값
+        Directory 경로
+      HTML 파일에서 경로는 파일 시스템 내의 위치를 지정
       웹 페이지에서 다른 파일이나 리소스를 참조하는데 사용
         - 상대 경로(Relative Path)
         - 절대 경로(Absolute Path) -->
@@ -38,11 +52,12 @@
     <a href="C:/workspace/workspace-busan-2024-3/HTML/0.route/route.html">절대 경로</a>
     <br />
     <ul>
-      <li><a href="../0.route/route.html">상대경로</a></li>
-      <li><a href="../1.image/image.html">이미지</a></li>
-      <li><a href="../2.text/text1.html">문단, 텍스트 서식</a></li>
-      <li><a href="../2.text/text2.html">목록 서식</a></li>
-      <li><a href="../3.table/table.html">표 (테이블)</a></li>
+      <li><a href="./0.route/route.html">상대경로</a></li>
+      <li><a href="./1.image/image.html">이미지</a></li>
+      <li><a href="./2.text/text1.html">문단, 텍스트 서식</a></li>
+      <li><a href="./2.text/text2.html">목록 서식</a></li>
+      <li><a href="./3.table/table.html">표 (테이블)</a></li>
+      <li><a href="./4.form/form.html">폼</a></li>
     </ul>
     <!-- 단락 태크 -->
     <p>
