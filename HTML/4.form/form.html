@@ -16,13 +16,14 @@
     <!-- 사용자 입력을 받아 서버로 보내 데이터를 처리할 내용을 담는 태그
     GET 방식의 전송은 퀴 스트링으로 보내는 데이터를 URL에 표시한다.
     POST방식의 전송은 데이터를 URL에 표시하지 않는다.-->
-    <form action="" method="POST">
+    <form action="" method="GET">
+      <!-- POST도 있음 -->
       <!-- form 요소 안에 들어갈수 있는 태그 <fieldset>, <legend>
 				폼 요소를 그룹화 하고 그룹의 제목을 지정 -->
       <fieldset>
         <legend>분류 1</legend>
-        아이디 :
-        <input type="text" name="input=id" value="inserted-id" />
+        <label for="text">아이디 :</label>
+        <input type="text" name="input-id" value="inserted-id" />
         <br />
         비밀번호 입력란 :
         <input type="password" name="" id="" />
@@ -75,12 +76,28 @@
         <input type="hidden" name="hidden-data" value="숨겨진 데이터" />
         <br />
         체크박스 :
-        <input type="checkbox" name="checkbox" value="111" checked />
-        정보처리기사
-        <input type="checkbox" name="checkbox" value="222" />
-        SQL
-        <input type="checkbox" name="checkbox" value="333" />
-        AWS
+        <ul style="list-style: none">
+          <li>
+            <!-- label 태그는 inline 태그 -->
+            <label for="check-option-1">
+              <!-- 카멜케이스(checkOption1), 파스칼 케이스(CheckOption1) 스네이크케이스(check_option_1)-->
+              <input type="checkbox" name="checkbox" id="check-option-1" value="111" checked />
+              정보처리기사
+            </label>
+          </li>
+          <li>
+            <label for="check-option-2">
+              <input type="checkbox" name="checkbox" id="check-option-2" value="222" />
+              SQL
+            </label>
+          </li>
+          <li>
+            <label for="check-option-3">
+              <input type="checkbox" name="checkbox" id="check-option-3" value="333" />
+              AWS
+            </label>
+          </li>
+        </ul>
         <br />
         <ul>
           라디오 :
@@ -112,8 +129,10 @@
         </ol>
         <br />
       </fieldset>
+      <!-- 태그로 버튼을 만드는 2가지 방법 -->
       제출 :
       <input type="submit" value="전송" />
+      <button type="submit">버튼222</button>
       <br />
       리셋 :
       <input type="reset" value="재입력" />

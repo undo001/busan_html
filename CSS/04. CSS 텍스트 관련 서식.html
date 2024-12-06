@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>텍스트 관련 서식</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap" rel="stylesheet" />
+    <style>
+      /*
+		 	텍스트 관련 서식 종류
+		  font-size : 텍스트 크기
+			font-weight: 글자의 두깨(100~900)
+			font-family: 텍스트의 글꼴 
+			font-style: 문자 스타일(normal,italic)
+			color: 글꼴의 색상
+			text-decoration: 텍스트의 줄 표시/ 제거
+			text-transform: 대소문자 변환
+			text-shadow: 텍스트의 그림자 효과
+			*/
+      a {
+        text-align: center;
+        color: blue;
+        text-decoration: underline;
+      }
+      h1 {
+        text-align: center;
+        font-size: 50px;
+        font-weight: 900;
+      }
+      p {
+        text-transform: capitalize;
+        text-align: center;
+        text-shadow: 1px 1px blue;
+      }
+      #Enzo {
+        font-family: 'Yuji Mai', serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS 서식 관련 속성</h1>
+    <p><a href="">첼시 우승 바로가기</a></p>
+    <p>Chelsea Football Club Champions of Europe</p>
+    <p class="copy">copyright all Reserved by Chelsea 2024</p>
+    <p id="Enzo">enzo Fernandez</p>
+  </body>
+</html>

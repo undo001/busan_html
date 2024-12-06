@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>폼 예제</title>
+  </head>
+  <body>
+    <form action="../home.html" method="GET">
+      <fieldset style="width: 200px">
+        <legend>회원정보</legend>
+        <label for="id">
+          아이디:
+          <br />
+          <input type="text" name="id" id="id" value="hong" />
+        </label>
+        <br />
+        <label for="pw">
+          패스워드:
+          <br />
+          <input type="password" name="" id="pw" />
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>과목</legend>
+        <label for="chkop1">
+          HTML
+          <input type="checkbox" name="subject" id="chkop1" value="HTML" />
+        </label>
+        <label for="chkop2">
+          CSS
+          <input type="checkbox" name="subject" id="chkop2" value="CSS" checked />
+        </label>
+        <label for="chkop3">
+          JS
+          <input type="checkbox" name="subject" id="chkop3" value="JS" />
+        </label>
+        <br />
+        <br />
+        <label for="r1">
+          상
+          <input type="radio" name="radio" id="r1" value="상" />
+        </label>
+        <label for="r2">
+          중
+          <input type="radio" name="radio" id="r2" value="중" />
+        </label>
+        <label for="r3">
+          하
+          <input type="radio" name="radio" id="r3" value="하" />
+        </label>
+      </fieldset>
+      <button type="submit">전송</button>
+      <input type="reset" value="취소" />
+      <input type="button" value="홈으로" onclick="location.href='../home.html'" />
+    </form>
+  </body>
+</html>
+
+<form action=""></form>

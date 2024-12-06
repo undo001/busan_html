@@ -1,0 +1,60 @@
+p {
+  color: blue;
+}
+
+h1[title] {
+  color: green;
+}
+
+.highlight {
+  background-color: yellow;
+  width: fit-content;
+}
+
+#unique-item {
+  font-size: 20px;
+}
+
+h2 + p {
+  color: red;
+}
+
+/* 
+#intro,
+#selectors,
+#advanced {
+  background-color: #f0f0f0;
+} */
+
+/* 
+.description + section {
+  background-color: #f0f0f0;
+} */
+
+section {
+  margin: 10px;
+}
+
+section > h2 {
+  margin-left: 10px;
+}
+
+.description ~ section {
+  background-color: #f0f0f0;
+  border-radius: 1ch;
+  border: 3px dotted gray;
+  width: 450px;
+}
+
+ul > li {
+  font-weight: bold;
+}
+
+#a > p {
+  margin-left: 10px;
+}
+
+footer > p {
+  color: black;
+  text-decoration: underline;
+}

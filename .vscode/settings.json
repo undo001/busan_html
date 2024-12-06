@@ -20,5 +20,6 @@
       "tag_case": "lower",
       "profile": "html5"
     }
-  }
+  },
+  "commentTranslate.targetLanguage": "ko"
 }
