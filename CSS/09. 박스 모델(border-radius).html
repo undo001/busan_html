@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>border-radius</title>
+    <style>
+      div {
+        border: 2px solid black;
+        width: 200px;
+        height: 200px;
+        float: left;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .box1 {
+        border-radius: 50px;
+      }
+
+      .box2 {
+        border-radius: 20%;
+      }
+
+      /* 좌측상단, 우층상단, 우측하단, 좌측하단 */
+      .box3 {
+        border-radius: 5px 10px 20px 30px;
+      }
+
+      /* 좌측상단과 그 맞은편, 우측하단과 맞은편 */
+      .box4 {
+        border-radius: 10px 30px;
+      }
+
+      .box5 {
+        border-radius: 100px 100px 50% 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+    <div class="box4">box4</div>
+    <div class="box5">box5</div>
+  </body>
+</html>

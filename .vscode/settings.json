@@ -1,6 +1,6 @@
 {
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "eslint.validate": ["javascript", "css", "html", "markdown"],
+  "eslint.validate": ["javascript", "html"],
   "editor.tabSize": 2, // 기본 들여쓰기 크기 (스페이스 개수)
   "editor.insertSpaces": false, // true: 스페이스 사용, false: 탭 사용
   "[html]": {
