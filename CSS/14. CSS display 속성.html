@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>display 속성 예제</title>
+    <style>
+      .block {
+        display: block;
+        width: 100px;
+        height: 100px;
+        background-color: lightcoral;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      .inline {
+        display: inline;
+        /* 크기를 변하지 않음 */
+        width: 100px;
+        height: 100px;
+        /* text-align: center; */
+        background-color: lightblue;
+        margin-right: 50px;
+        /* background-color의 범위가 아니기 때문에
+				위아래 패딩이 적용되는 것 처럼 보이나 실제 줄 간격에 영향을 주지 않음 */
+        padding-bottom: 10px;
+      }
+      .inline-block {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        background-color: lightgreen;
+        margin-top: 130px;
+      }
+
+      span {
+        background-color: aqua;
+        /* 크기 적용 안됨 */
+        height: 100px;
+        width: 100px;
+      }
+      .span-inline-block {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+        text-align: center;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 블록 레벨 요소 -->
+    <div class="block">블록 요소</div>
+    <br />
+
+    <!-- 인라인 요소 -->
+    <div class="inline">인라인 요소</div>
+    <div class="inline">인라인 요소2</div>
+    <br />
+
+    <!-- 인라인 블록 요소 -->
+    <div class="inline-block">인라인 블록 요소</div>
+    <div class="inline-block">인라인 블록 요소2</div>
+
+    <br />
+
+    <!-- span(인라인 요소)에 block, inline-block 적용 -->
+    <span>display 속성을 적용하지 않은 span 태그</span>
+    <span class="block">span 태그(인라인 요소)를 블록 요소로 변환</span>
+    <span class="span-inline-block">인라인 블록 span</span>
+    <span class="span-inline-block">인라인 블록 span2</span>
+
+    <!-- div에 적용한 display 고성 -->
+  </body>
+</html>
