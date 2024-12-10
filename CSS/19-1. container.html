@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox-container</title>
+    <style>
+      .container {
+        display: flex;
+        border: 1px solid black;
+        height: 300px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .item {
+        width: 50px;
+        background-color: red;
+        color: white;
+        font-size: 18px;
+        border: 2px solid gold;
+        border-radius: 5px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container" id="flexContainer">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+    </section>
+
+    <div>
+      <label for="flexDirection">Flex Direction:</label>
+      <select id="flexDirection">
+        <option value="row">Row</option>
+        <option value="column">Column</option>
+        <option value="row-reverse">Row Reverse</option>
+        <option value="column-reverse">Column Reverse</option>
+      </select>
+      <br />
+      <label for="justifyContent">Justify Content:</label>
+      <select id="justifyContent">
+        <option value="flex-start">Start</option>
+        <option value="center">Center</option>
+        <option value="flex-end">End</option>
+        <option value="space-between">Space Between</option>
+        <option value="space-around">Space Around</option>
+        <option value="space-evenly">Space Evenly</option>
+      </select>
+      <br />
+      <label for="alignItems">Align Items:</label>
+      <select id="alignItems">
+        <option value="flex-start">Start</option>
+        <option value="center">Center</option>
+        <option value="flex-end">End</option>
+        <option value="baseline">Baseline</option>
+        <option value="stretch">Stretch</option>
+      </select>
+    </div>
+
+    <script>
+      const container = document.getElementById('flexContainer');
+      const directionSelect = document.getElementById('flexDirection');
+      const justifySelect = document.getElementById('justifyContent');
+      const alignSelect = document.getElementById('alignItems');
+
+      function applyStyles() {
+        container.style.flexDirection = directionSelect.value;
+        container.style.justifyContent = justifySelect.value;
+        container.style.alignItems = alignSelect.value;
+      }
+
+      directionSelect.addEventListener('change', applyStyles);
+      justifySelect.addEventListener('change', applyStyles);
+      alignSelect.addEventListener('change', applyStyles);
+    </script>
+  </body>
+</html>

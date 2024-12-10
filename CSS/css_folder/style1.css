@@ -1,0 +1,38 @@
+body {
+  background-color: #f0f0f0;
+  padding: 0px;
+  margin: 0px;
+}
+header {
+  background-color: #4caf50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.card-container {
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  height: auto;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 1%;
+  float: left;
+  align-content: center;
+  padding: 10px;
+}
+
+footer {
+  background-color: #333;
+  position: fixed;
+  padding: 10px;
+  width: 100%;
+  bottom: 0px;
+  color: white;
+  text-align: center;
+}

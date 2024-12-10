@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>overflow</title>
+    <style>
+      /*
+			overflow 속성
+				visible	: 부모요소 밖으로 컨텐츠가 넘쳐흐른 상태로 화면에 표시됨
+				hidden	: 넘치는 컨텐츠를 잘리고 보여지지 않게 됨
+				scroll	: 넘치는 컨텐츠를 잘려서 표시되거나 상자 내부를 스크롤 가능(수평 수직 스크롤바가 무조건 표시됨)
+				auto		: scroll과 유사하나 필요할 때만 스크롤 바를 표시함
+				overlfow-x,y: 수평 수직의 스크롤 바를 개별적으로 컨트롤 가능
+				*/
+      section {
+        border: 5px solid blue;
+        width: fit-content;
+        height: 100px;
+        overflow: auto;
+      }
+      div {
+        background-color: gold;
+        border: 1px solid red;
+        float: left;
+        width: 200px;
+        height: 150px;
+        box-sizing: border-box;
+        overflow: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div>
+        content
+        <p>content1</p>
+        <p>content1</p>
+        <p>content1</p>
+        <p>content1</p>
+      </div>
+      <div>content</div>
+      <div>content</div>
+    </section>
+  </body>
+</html>
