@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>메뉴 만들기</title>
+    <style>
+      .container {
+        display: flex;
+        width: 600px;
+        background-color: pink;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0px;
+        margin-top: 20px;
+      }
+
+      ul {
+        list-style: none;
+        display: flex;
+        padding: 0px;
+        margin: 0px;
+        flex: 1;
+      }
+
+      li {
+        flex: 1;
+        width: 100px;
+        color: black;
+        text-align: center;
+        font-size: 15px;
+        margin: 0;
+      }
+
+      li:hover {
+        background-color: lightgray;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        padding: 10px;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <ul>
+        <li><a href="#">Menu-1</a></li>
+        <li><a href="#">Menu-2</a></li>
+        <li><a href="#">Menu-3</a></li>
+        <li><a href="#">Menu-4</a></li>
+        <li><a href="#">Menu-5</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
